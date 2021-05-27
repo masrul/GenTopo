@@ -1,7 +1,7 @@
 GenTopo
 =================================================================
 
-GenTopo is a lightweight python toolkit for generating gromacs topology template.
+**GenTopo** is a lightweight python toolkit for generating gromacs topology template.
 
 ### Code Organization
 <img src="Tree.jpg" width="300"/> 
