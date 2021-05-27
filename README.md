@@ -1,20 +1,27 @@
 GenTopo
-=================================================================
+---
 
 **GenTopo** is a lightweight python toolkit for generating gromacs topology template.
 
 ### Code Organization
+---
+
 <img src="Tree.jpg" width="300"/> 
 
 
 ### Installation 
+---
+
 ```bash 
 git clone https://github.com/masrul/GenTopo 
 cd GenTopo
 pip install . 
 ```
 
-### Usages: 
+&nbsp;
+
+### Usages 
+---
 
 **Case-1: Creating gromacs topology template**
 
