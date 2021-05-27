@@ -57,11 +57,8 @@ class MolGraph:
 
     def genBonds(self):
 
-        if self.coordObj.nBonds == 0:
-            raise RuntimeError("Input file does not contains connectivity")
-        else:
-            self.bonds = copy.deepcopy(self.coordObj.bonds)
-            self.nBonds = len(self.bonds)
+        self.bonds = copy.deepcopy(self.coordObj.bonds)
+        self.nBonds = len(self.bonds)
         print("Number of Bonds: %-5d" % self.nBonds)
 
     def genAngles(self):
