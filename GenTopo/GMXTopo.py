@@ -1,4 +1,3 @@
-import numpy as np
 import copy
 
 
@@ -155,7 +154,7 @@ class Topo:
         )
         for atype in _atomTypes:
             self.topFH.write(
-                "%6s       0   0.00000   0.00000       A   0.00000     0.00000\n"
+                "%6s       0   0.00000    0.00000       A   0.00000     0.00000\n"
                 % atype
             )
 

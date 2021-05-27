@@ -1,4 +1,4 @@
-from GenTopo.PeriodicTable import elements as elements
+from GenTopo.PeriodicTable import elements
 from GenTopo.Warning import non_orthogonal_box, connectivity_missing
 
 
@@ -144,7 +144,7 @@ class PDBobj:
             dy -= self.box[1] * round(dy / self.box[1])
 
         if self.lpbc[2]:
-            dz -= self.box[2] * round(dy / self.box[2])
+            dz -= self.box[2] * round(dz / self.box[2])
 
         return dx, dy, dz
 
