@@ -3,10 +3,6 @@ from GenTopo.ImproperDihedral import ImproperDihedralGenerator
 from GenTopo.Coord import PDBobj
 import copy
 
-# from RingUtil import RingUtil
-# from ImproperDihedral import ImproperDihedralGenerator
-# import copy
-# from Coord import PDBobj
 
 class MolGraph:
 
