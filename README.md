@@ -4,7 +4,7 @@ GenTopo
 GenTopo is a lightweight python toolkit for generating gromacs topology template.
 
 ### Code Organization
-<img src="Tree.jpg" width="250"/> 
+<img src="Tree.jpg" width="300"/> 
 
 
 ### Installation 
@@ -22,7 +22,7 @@ pip install .
 respectively atomTypes and charges. An example PDB file can be found in Example/test.pdb.
 It is recommended to have connectivity information in the PDB file, but not manadatory. If connectivity is 
 missing, then code will generate connectivity information using heuristic of Van der Waals  
-radius of atoms. In addition to internal coordinates, it also creates all required bondTypes, angleTypes, and dihedralTypes. **GenTopo** is independent of particular force filed, it simply creates template. User needs to provide required parameters once template is created.  
+radius of atoms. In addition to internal coordinates, it also creates all required bondTypes, angleTypes, and dihedralTypes. **GenTopo** is independent of particular force filed, it simply creates template. User needs to provide required parameters once template is created. An example topology template created by **GenTopo** can be found in Example/topol.top.  
 
 ```python 
 # File name: Example/test.py

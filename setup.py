@@ -9,6 +9,9 @@ setup(
     author_email="mmh568@msstate.edu",
     packages=["GenTopo"],
     py_modules=["Coord", "Graph", "GMXTopo", "PeriodicTable", "ImproperDihedral"],
+    install_requires=['numpy>=1.14'],
+    python_requires='>=3.7',
+    
     classifiers=[
         "Intended Audience :: Molecular Simulation",
         "Operating System :: POSIX :: Linux",
