@@ -9,7 +9,7 @@ GenTopo is a lightweight python toolkit for generating gromacs topology template
 
 ### Installation 
 ```bash 
-git clone github.com/masrul/GenTopo  
+git clone https://github.com/masrul/GenTopo 
 cd GenTopo
 pip install . 
 ```
