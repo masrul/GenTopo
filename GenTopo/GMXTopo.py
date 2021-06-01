@@ -2,8 +2,7 @@ import copy
 
 
 class Topo:
-    def __init__(self, mol, molGraph, itpFile="topol.top"):
-        self.itpFile = itpFile
+    def __init__(self, mol, molGraph):
         self.molGraph = molGraph
         self.mol = mol
         self.atomTypes = mol.atomTypes
@@ -101,8 +100,8 @@ class Topo:
             self.genPairs = "no"
         self.fudgeFactors = FudgeFactors
 
-    def write(self):
-        self.topFH = open(self.itpFile, "w")
+    def write(self, topFile="topol.top"):
+        self.topFH = open(topFile, "w")
         self.writeDefaults()
         self.writeAtomTypes()
         self.writeBondTypes()
