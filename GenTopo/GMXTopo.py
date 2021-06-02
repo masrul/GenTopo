@@ -89,7 +89,7 @@ class Topo:
     def setOneFourFuncID(self, oneFourFunID=None):
         self.oneFourFunID = oneFourFunID
 
-    def setDefaults(self, NBFunc=1, CombRule=2, GenPairs=True, FudgeFactors=(0.5, 0.5)):
+    def setDefaults(self, NBFunc=0, CombRule=0, GenPairs=True, FudgeFactors=(0.0, 0.0)):
 
         self.nbFunc = NBFunc
         self.combRule = CombRule
