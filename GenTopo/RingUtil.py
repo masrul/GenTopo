@@ -27,6 +27,31 @@ class RingUtil:
         for v in self.visited:
             self.visited[v] = False
 
+    def isAromatic(self,inp):
+        self.reset()
+        if isinstance(inp,int): # atom 
+            self.start = inp
+
+            return self.DFS(current, parent=-1)
+        
+        else:  # bond 
+            inode,jnode=inp 
+            self.adjList[inode].remove(jnode)
+            self.adjList[jnode].remove(inode)
+
+            self.RouteBFS = []
+
+            self.BFS(inode)
+
+            self.adjList[inode].append(jnode)
+            self.adjList[jnode].append(inode)
+
+            if jnode in self.RouteBFS:
+                return True
+            else:
+                return False
+
+
     def isRingMember(self, current):
         self.start = current
         self.reset()
@@ -54,14 +79,14 @@ class RingUtil:
         self.adjList[inode].remove(jnode)
         self.adjList[jnode].remove(inode)
 
-        self.bfsChain = []
+        self.RouteBFS = []
 
         self.BFS(inode)
 
         self.adjList[inode].append(jnode)
         self.adjList[jnode].append(inode)
 
-        if jnode in self.bfsChain:
+        if jnode in self.RouteBFS:
             return True
         else:
             return False
@@ -76,7 +101,7 @@ class RingUtil:
         while queue:
 
             s = queue.pop(0)
-            self.bfsChain.append(s)
+            self.RouteBFS.append(s)
 
             for i in self.adjList[s]:
                 if not self.visited[i]:
