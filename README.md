@@ -1,4 +1,5 @@
 # GenTopo
+
 A lightweight python toolkit for generating gromacs topology template.
 
 ### Code Organization
